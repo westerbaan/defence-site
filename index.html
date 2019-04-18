@@ -1,12 +1,17 @@
 <html>
   <head>
     <style>
+form {
+  margin: 20px;
+}
 input {
   font-size: 12pt;
   font-family: serif;
 }
-h1, h2 {
+h1, h2, strong {
   color: #05b;
+  font-family: gill sans, "Gill Sans MT", Calibri,  sans-serif;
+  font-weight: normal;
 }
 h2 {
   display: inline;
@@ -38,7 +43,6 @@ h2 {
 }
 h1 {
   font-size: 26pt;
-  font-family: sans-serif;
   text-align: center;
 }
 .left {
@@ -86,14 +90,23 @@ table td {
     <a href="parking.pdf">is P6 (Grotiusgebouw)</a>.
   </p>
   <p><h2>Party.</h2>
-  We will host a celebration party later in May.
-  We're very close to picking a date.
-  Please leave your e-mail adres so that we have settled on the date.
+  We will host a celebration party Thursday
+    <strong>May 16<sup>th</sup>, 21:00 &ndash; 01:00</strong>
+    at the <a href="https://thiemeloods.nl">Thieme Loods</a>,
+    <a href="https://goo.gl/maps/LbBzCCaCE3MFBkcWA">Leemptstraat 34, Nijmegen</a>.</p>
+  <p><h2>Registration.</h2>
+  Please let us know if you will join the defence and/or party:
     <form method="post"
-    action="https://westerbaan.name/promotie/api/email"
-    style="display: inline;">
-      <input name="email" type="text"
-          placeholder="your@email.com" />
+          action="http://localhost:1405/promotie/api/attendance">
+      <input name="name" type="text"
+       placeholder="Your name" /><br/>
+       <label>
+         <input name="defence" type="checkbox" checked />
+         Defence and/or reception May 14<sup>th</sup>
+       </label><br/>
+       <label>
+         <input name="party" type="checkbox" checked />
+         Party May 16<sup>th</sup></label><br/>
       <input type="submit" value="register" />.
   </form>
   </p>
