@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <style>
+input {
+  font-size: 12pt;
+  font-family: serif;
+}
+h1, h2 {
+  color: #05b;
+}
+h2 {
+  display: inline;
+  padding-right: 10px;
+}
+* {
+  font-size: 16pt;
+}
+#schedule {
+  clear: both;
+}
+#date,
+#pretitle {
+  font-style: italic;
+  text-align: center;
+  font-size: 16pt;
+}
+#pretitle {
+  margin-top: 30px;
+}
+#date {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+#main {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-size: 26pt;
+  font-family: sans-serif;
+  text-align: center;
+}
+.left {
+  float: left;
+  margin-left: 25px;
+}
+.right {
+  float: right;
+  margin-right: 25px;
+}
+img {
+  box-shadow: 10px 10px 5px grey;
+  margin-bottom: 40px;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+table td {
+  padding-right: 80px;
+}
+    </style>
+  </head>
+<body>
+  <div id="main">
+  <p id="pretitle">You are cordially invited to attend the public</p>
+  <h1>Defences of Abraham & Bas Westerbaan</h1>
+  <p id="date">May 14<sup>th</sup>, 2019 at the <a href="#aula">Aula</a> of the Radboud Universiteit</p>
+  <a href="https://arxiv.org/abs/1804.02203"
+     ><img class="left" src="bram.jpg" width="300" /></a>
+  <a href="https://arxiv.org/abs/1803.01911"
+     ><img class="right" src="bas.jpg" width="300" /></a>
+  <table id="schedule">
+    <tr><td>10:30 (sharp!)</td><td>Defence Bram</td></tr>
+    <tr><td>12:30 (sharp!)</td><td>Defence Bas</td></tr>
+    <tr><td>~14:00</td><td>Reception</td></tr>
+  </table>
+  <a id="aula" /><p>
+  <h2>Location.</h2>
+    The defences take place at
+    <a href="https://www.ru.nl/facilitairbedrijf/@712858/aula-0/">the Aula</a>
+    of the Radboud Universiteit: <em>Comeniuslaan 2, Nijmegen</em>.
+    The busstop <em>Spinozagebouw/Tandheelkunde</em> is a minute walk away.
+    The most convenient car park
+    <a href="parking.pdf">is P6 (Grotiusgebouw)</a>.
+  </p>
+  <p><h2>Party.</h2>
+  We will host a celebration party later in May.
+  We're very close to picking a date.
+  Please leave your e-mail adres so that we have settled on the date.
+    <form method="post"
+    action="https://westerbaan.name/promotie/api/email"
+    style="display: inline;">
+      <input name="email" type="text"
+          placeholder="your@email.com" />
+      <input type="submit" value="register" />.
+  </form>
+  </p>
+  <p><h2>Paranymphs.</h2> Rik Sprenkels,
+  John van de Wetering and Renee Westerbaan.</p>
+  </div>
+</body>
+</html>
+<!-- vim: se sw=2 ts=2 : -->
